@@ -13,7 +13,7 @@ function Page3(){
                     <p className="bm-description">This project involved using the Google Books API in React to build a book database in which a user could search for books and save them in separate lists. It was a good practice of React concepts including router, context, and hooks, as well as and handling API calls and responses.</p>
                     <br/>
                     <a 
-                        href="https://github.com/evantaylor7/assignments/tree/master/projects/personal-react-site" 
+                        href="https://github.com/evantaylor7/personal-react-site" 
                         target='_blank'
                     >
                         <DevIcon 
@@ -22,7 +22,7 @@ function Page3(){
                         />
                     </a>
                     <a 
-                        href="https://github.com/evantaylor7/assignments/tree/master/projects/personal-react-site" 
+                        href="https://github.com/evantaylor7/personal-react-site" 
                         target='_blank'
                         className="bm-link"
                     >
