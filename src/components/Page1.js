@@ -43,6 +43,7 @@ function Page1(){
                 <a 
                     href='https://github.com/evantaylor7' 
                     target='_blank'
+                    rel="noopener noreferrer"
                     title='github repo'
                 >
                     <DevIcon 
