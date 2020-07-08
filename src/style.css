@@ -36,7 +36,7 @@ body {
 }
 
 .nav-link:hover {
-    /* cursor: pointer; */
+    cursor: pointer;
     color: #7FDBFF
 }
 
@@ -195,30 +195,85 @@ body {
     padding-top: 34px
 }
 
-.bookmark {
+.project {
     text-align: right;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 50px
 }
 
-.bm-title {
+.project-alt {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 50px
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px
+}
+
+.description-container-alt {
+    grid-column: 2 / 3;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hr-top, .hr-bottom {
+    background: #3D9970;
+    color: #3D9970;
+    border: none;
+    height: 1px;
+}
+
+.hr-top {
+    margin-bottom: 10px;
+}
+
+.project-title {
     font-size: 30px
 }
 
-.bm-description {
-    margin-top: 10px;
+.description {
+    margin-top: 16px;
     max-width: 600px;
     margin-left: auto;
-    font-size: 13pt
+    font-size: 13pt;
+    margin-bottom: 10px;
 }
 
-.bm-screenshot {
-    width: 100%;
-    margin: 0 20px;
+.description-alt {
+    margin-top: 16px;
+    max-width: 600px;
+    margin-right: auto;
+    font-size: 13pt;
+    margin-bottom: 10px;
 }
 
-.bm-link {
+.links-container {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding-left: auto;
+    margin-top: auto;
+}
+
+.links-container-alt {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding-right: auto;
+    margin-top: auto;
+}
+
+.link {
     font-size: 20px;
     text-decoration: none;
     /* color: rgb(224, 224, 224); */
@@ -227,18 +282,71 @@ body {
     transition: color .4s;
 }
 
-.bm-link:hover {
+.link-name {
+    text-decoration: none;
+    color: #3D9970;
+    transition: color .4s;
+}
+
+.link:hover, .link-name:hover {
     color: #7FDBFF
+}
+
+.gh-link, .gh-link-alt {
+    display: flex;
+    align-items: center;
+}
+
+.gh-link:hover, .gh-link-alt:hover > .link {
+    color: #7FDBFF
+}
+
+.gh-link:hover, .gh-link-alt:hover > .mini-github-icon {
+    fill: #7FDBFF
 }
 
 .mini-github-icon {
     width: 40px;
-    margin-bottom: -10px;
     fill: #3D9970;
+    transition: .4s
 }
 
 .mini-github-icon:hover {
     fill: #7FDBFF
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-container-alt {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.screenshot-alt {
+    width: 100%;
+    margin-left: -10px;
+    transition: .4s
+}
+
+.screenshot-alt:hover {
+    width: calc(100% + 10px);
+    margin-left: -15px;
+}
+
+.screenshot {
+    width: 100%;
+    padding-left: 10px;
+    transition: .4s
+}
+
+.screenshot:hover {
+    width: calc(100% + 10px);
+    margin-left: -5px;
 }
 
 .resume-container {
@@ -264,6 +372,12 @@ body {
     color: rgb(20, 20, 20)
 }
 
+@media only screen and (max-width: 1300px){
+    .links-container, .links-container-alt {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1230px){
     .title {
         font-size: 60pt;
@@ -273,6 +387,45 @@ body {
 @media only screen and (max-width: 1070px){
     .title {
         font-size: 50pt;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .project, .project-alt {
+        display: block;
+        text-align: center;
+        padding: 20px 50px;
+    }
+
+    .hr-top {
+        margin-bottom: 30px;
+    }
+
+    .screenshot, .screenshot-alt {
+        padding: 0;
+    }
+
+    .hr-bottom {
+        display: none;
+    }
+
+    .description-container {
+        padding: 0;
+    }
+
+    .description-container-alt {
+        margin: 0;
+    }
+
+    .description, .description-alt {
+        max-width: 90%;
+        margin: 16px auto 0;
+    }
+
+    .links-container, .links-container-alt {
+        max-width: 90%;
+        margin: 10px auto;
+        display: flex;
     }
 }
 
@@ -291,21 +444,29 @@ body {
         padding: 20px 40px
     }
 
-    .bookmark {
-        display: block;
-        text-align: center
-    }
-
-    .bm-screenshot {
-        margin: 22px 0
-    }
-
     .resume {
         font-size: 33pt;
     }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 660px){
+    .links-container, .links-container-alt {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .project, .project-alt {
+        padding: 30px 0;
+    }
+
+    .screenshot:hover, .screenshot-alt:hover {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 490px){
     .title {
         font-size: 30pt;
         padding: 0 30px

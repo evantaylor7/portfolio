@@ -9,7 +9,14 @@ function Nav(){
                 <Link className="nav-link" to='page1' smooth={true}>Home</Link>
                 <Link className="nav-link" to='page2' smooth={true}>Skills</Link>
                 <Link className="nav-link" to='page3' smooth={true}>Projects</Link>
-                <a className="nav-link" href={resumePDF} target='_blank'>Resume</a>
+                <a 
+                    className="nav-link" 
+                    href={resumePDF} 
+                    target='_blank' 
+                    rel="noopener noreferrer"
+                >
+                    Resume
+                </a>
             </ul>
         </div>
     )
