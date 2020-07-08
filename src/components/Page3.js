@@ -12,16 +12,16 @@ function Page3(){
             <Photo/>
             <Bookmark/>
             <hr/>
-            <div className="resume-container">
-                <a 
-                    className="resume" 
-                    href={resumePDF} 
-                    target='_blank' 
-                    rel="noopener noreferrer"
-                >
-                    <b>View my Resume</b>
-                </a>
-            </div>
+            <a 
+                className="resume" 
+                href={resumePDF} 
+                target='_blank' 
+                rel="noopener noreferrer"
+            >
+                <div className="resume-container">
+                        <b>View my Resume</b>
+                </div>
+            </a>
             <hr/>
         </div>
     )

@@ -19,6 +19,49 @@ body {
     z-index: 5;
 }
 
+.logo-container {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #7FDBFF;
+    height: 32px;
+    width: 32px;
+    margin-left: 4px;
+    margin-top: 2px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: .6s;
+}
+
+@keyframes flip {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(90deg)}
+}
+
+@keyframes alt-flip {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-90deg)}
+}
+
+.logo {
+    height: 22px;
+    transition: .6s;
+    animation: alt-flip .6s .8s;
+}
+
+.logo-container {
+    animation: flip .6s .8s;
+}
+
+.logo-container:hover {
+    transform: rotate(90deg)
+}
+
+.logo-container:hover > .logo {
+    transform: rotate(-90deg);
+}
+
 .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -44,7 +87,11 @@ body {
 .page1 {
     height: 100vh;
     min-height: 700px;
-    background-color: rgb(15, 45, 53);
+    background: linear-gradient(rgba(15, 45, 53, .7), rgba(15, 45, 53, .7)), url('https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative
 }
 
@@ -64,18 +111,20 @@ body {
     fill: rgb(224, 224, 224);
 }
 
+@keyframes fade-in {
+    to {opacity: 1}
+}
+
 .title {
     font-size: 70pt;
     padding: 10px 50px;
     text-align: left;
+    opacity: 0;
     /* color: rgb(224, 224, 224); */
-    color: rgb(91, 155, 152);
-    transition: color 1s
-}
-
-.title:hover {
-    /* color: #85144b */
-    color: #7FDBFF
+    /* color: rgb(91, 155, 152); */
+    color: #7FDBFF;
+    /* color: rgb(20, 20, 20); */
+    animation: fade-in 2.5s .2s forwards
 }
 
 .next-page {
@@ -120,14 +169,14 @@ body {
 }
 
 .icon {
-    fill: rgb(48, 112, 138);
+    fill: #64aac5;
     width: 60px;
     padding-right: 20px;
     transition: fill .5s
 }
 
 .icon:hover {
-    fill: rgb(89, 150, 173)
+    fill: #7FDBFF
 }
 
 .skills {
@@ -143,19 +192,19 @@ body {
 }
 
 .skill-text {
-    color: rgb(146, 114, 72);
+    color: rgb(189, 151, 102);
     transition: color .4s
 }
 
 .skill2 {
     margin: 23px;
     margin-left: 85px;
-    color: rgb(146, 114, 72);
+    color: rgb(189, 151, 102);
     transition: color .4s
 }
 
 .skill-text:hover, .skill2:hover {
-    color: rgb(172, 144, 107)
+    color: rgb(223, 202, 174)
 }
 
 .next-page2 {
@@ -186,7 +235,8 @@ body {
     text-align: center;
     background-color: rgb(15, 45, 53);
     /* color: rgb(224, 224, 224) */
-    color: rgb(91, 155, 152)
+    /* color: rgb(91, 155, 152) */
+    color: #64aac5
 }
 
 .projects {
@@ -243,6 +293,7 @@ body {
     margin-left: auto;
     font-size: 13pt;
     margin-bottom: 10px;
+    line-height: 1.4em;
 }
 
 .description-alt {
@@ -251,6 +302,7 @@ body {
     margin-right: auto;
     font-size: 13pt;
     margin-bottom: 10px;
+    line-height: 1.4em;
 }
 
 .links-container {
@@ -356,20 +408,21 @@ body {
 
 .resume-container:hover {
     background-color: rgb(189, 225, 235);
-    /* background-color: rgb(32, 73, 85); */
+}
+
+.resume-container:hover > .resume {
+    color: rgb(20, 20, 20);
 }
 
 .resume {
-    /* color: rgb(224, 224, 224); */
-    color: rgb(91, 155, 152);
+    color: #64aac5;
     text-decoration: none;
     font-size: 50pt;
     transition: color .4s;
 }
 
 .resume:hover {
-    /* color: #7FDBFF */
-    color: rgb(20, 20, 20)
+    color: rgb(20, 20, 20);
 }
 
 @media only screen and (max-width: 1300px){
@@ -433,6 +486,8 @@ body {
     .navbar {
         display: inline;
         text-align: right;
+        width: calc(100% - 40px);
+        padding: 10px 0;
     }
 
     .nav-link {
@@ -480,3 +535,9 @@ body {
         font-size: 24pt;
     }
 }
+
+/* @media only screen and (max-width: 370px){
+    .navbar {
+
+    }
+} */
