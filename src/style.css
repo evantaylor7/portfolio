@@ -522,6 +522,10 @@ body {
 }
 
 @media only screen and (max-width: 490px){
+    .page1 {
+        background-attachment: scroll;
+    }
+
     .title {
         font-size: 30pt;
         padding: 0 30px
@@ -535,9 +539,3 @@ body {
         font-size: 24pt;
     }
 }
-
-/* @media only screen and (max-width: 370px){
-    .navbar {
-
-    }
-} */
