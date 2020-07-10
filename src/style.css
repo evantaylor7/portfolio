@@ -511,21 +511,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 450px){
-    .project, .project-alt {
-        padding: 30px 0;
-    }
-
-    .screenshot:hover, .screenshot-alt:hover {
-        width: 100%
-    }
-}
-
 @media only screen and (max-width: 490px){
-    .page1 {
-        background-attachment: scroll;
-    }
-
     .title {
         font-size: 30pt;
         padding: 0 30px
@@ -537,5 +523,25 @@ body {
 
     .resume {
         font-size: 24pt;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .page1 {
+        background-attachment: scroll;
+    }
+
+    .project, .project-alt {
+        padding: 30px 0;
+    }
+
+    .screenshot-alt:hover {
+        width: 100%;
+        margin-left: -10px;
+    }
+    
+    .screenshot:hover {
+        width: 100%;
+        margin-left: 0;
     }
 }
