@@ -99,6 +99,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding-top: 34px
 }
 
@@ -124,7 +125,7 @@ body {
     /* color: rgb(91, 155, 152); */
     color: #7FDBFF;
     /* color: rgb(20, 20, 20); */
-    animation: fade-in 2.5s .2s forwards
+    animation: fade-in 2.5s .2s forwards;
 }
 
 .next-page {
@@ -236,7 +237,8 @@ body {
     background-color: rgb(15, 45, 53);
     /* color: rgb(224, 224, 224) */
     /* color: rgb(91, 155, 152) */
-    color: #64aac5
+    color: #64aac5;
+    padding-bottom: 50px;
 }
 
 .projects {
@@ -401,6 +403,14 @@ body {
     margin-left: -5px;
 }
 
+/* footer */
+.footer {
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
 .resume-container {
     padding: 20px;
     transition: background-color 2s
@@ -417,12 +427,93 @@ body {
 .resume {
     color: #64aac5;
     text-decoration: none;
-    font-size: 50pt;
+    font-size: 40pt;
+    text-align: center;
     transition: color .4s;
 }
 
 .resume:hover {
     color: rgb(20, 20, 20);
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.footer-contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.linkedin-text {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 9px;
+}
+
+.linkedin-text:hover {
+    color: rgb(48, 118, 176)
+}
+
+.footer-github-icon {
+    width: 60px;
+    fill: whitesmoke;
+    margin-left: -10px;
+}
+
+.footer-github-icon:hover {
+    fill: #3D9970;
+}
+
+.github-text {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.github-text:hover {
+    color: #3D9970
+}
+
+.mailto-text {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 9px;
+}
+
+.mailto-text:hover {
+    color: rgb(189, 151, 102)
+}
+
+.phone-icon {
+    font-size: 46px;
+    margin-top: -6px;
+    text-decoration: none;
+    color: whitesmoke
+}
+
+.phone-icon:hover {
+    color: #7FDBFF
+}
+
+.phone-text {
+    margin-left: 9px;
+    margin-top: -6px;
+    text-decoration: none;
+    color: whitesmoke
+}
+
+.phone-text:hover {
+    color: #7FDBFF
+}
+
+.signature {
+    font-size: 10px;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 1300px){
@@ -480,6 +571,17 @@ body {
         margin: 10px auto;
         display: flex;
     }
+
+    .footer-icons {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 600px;
+        margin: auto;
+    }
+
+    .footer-contact-container {
+        justify-content: flex-start;
+    }
 }
 
 @media only screen and (max-width: 745px){
@@ -511,6 +613,15 @@ body {
     }
 }
 
+@media only screen and (max-width: 580px){
+    .footer-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 260px;
+    }
+}
+
 @media only screen and (max-width: 490px){
     .title {
         font-size: 30pt;
@@ -518,7 +629,12 @@ body {
     }
 
     .nav-link {
-        padding: 10px
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .home-link {
+        display: none;
     }
 
     .resume {
