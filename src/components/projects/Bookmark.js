@@ -8,7 +8,7 @@ function Bookmark(){
             <div className="description-container">
                 <hr className="hr-top"/>
                 <h2 className="project-title">BookMark</h2>
-                <p className="description">This project was built in React and used the Google Books API, allowing a user to search for books and save them in separate lists. It was a good practice of React concepts including router, context, and hooks, as well as and handling API calls and responses.<br/><br/><b>Languages/Frameworks</b>: React, CSS.<br/><b>External Resources</b>: Google Books API.</p>
+                <p className="description">This project was built in React and used the Google Books API, allowing a user to search for books and save them in separate lists. It uses React router, context, and hooks, and axios to handle API calls and responses.<br/><br/><b>Languages/Frameworks</b>: React, CSS.<br/><b>External Resources</b>: Google Books API.</p>
                 <div className="links-container">
                     <div className="gh-link">
                         <a 
