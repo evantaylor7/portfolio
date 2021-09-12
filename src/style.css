@@ -162,11 +162,22 @@ body {
     /* ^ this was what made the arrow stick to the bottom of page 2 */
 }
 
+.skills {
+    padding-top: 8px;
+    margin: auto;
+    width: 320px;
+    text-align: center;
+}
+
 .p2-title {
     font-size: 45pt;
     margin-top: 28px;
     color: #3D9970
     /* color: whitesmoke */
+}
+
+.skill-list {
+    padding-left: 80px;
 }
 
 .icon {
@@ -180,10 +191,66 @@ body {
     fill: #7FDBFF
 }
 
-.skills {
+.c-sharp-logo {
+    width: 60px;
+    padding-right: 10px;
     padding-top: 8px;
-    margin: auto;
-    width: 180px
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #64aac5;
+    padding-left: 10px;
+    transition: color .5s
+}
+
+.c-sharp-logo:hover {
+    cursor: default;
+    color: #7FDBFF;
+}
+
+.c-logo {
+    height: 42px;
+    width: 42px;
+    background-color: #64aac5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .5s
+}
+
+.c-square {
+    width: 0;
+	height: 0;
+	border-top: 18px solid transparent;
+	border-right: 30px solid rgb(20, 20, 20);
+	border-bottom: 18px solid transparent;
+    position: absolute;
+    z-index: 10;
+    margin-left: 21px;
+    transition: background-color .5s;
+}
+
+.c-sharp-logo:hover > .c-logo{
+    background-color: #7FDBFF;
+}
+
+.c-logo-inner {
+    height: 22px;
+    width: 22px;
+    margin-left: 10px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 50%;
+    position: absolute;
+    transition: background-color .5s;
+}
+
+.sharp-logo {
+    font-weight: 550;
+    padding-left: 4px;
+    font-size: 16px;
+    position: absolute;
+    z-index: 11;
+    margin-left: 32px;
+    margin-bottom: 2px;
 }
 
 .skill {

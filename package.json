@@ -47,12 +47,13 @@
     ]
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "git-scripts": "^0.4.3",
     "surge": "^0.21.3"
   },
-  "git": { 
-    "scripts": { 
-      "pre-push": "npm run deploy" 
-    } 
+  "git": {
+    "scripts": {
+      "pre-push": "npm run deploy"
+    }
   }
 }
