@@ -38,11 +38,13 @@ function Footer(){
             </a>
             <hr/>
             <div className="footer-icons">
-                <div className="footer-contact-container">
+                <div 
+                    className="linkedin-container"
+                    onMouseEnter={handleLinkedEnter}
+                    onMouseLeave={handleLinkedLeave}
+                >
                     <div 
                         className='linkedin-icon'
-                        onMouseEnter={handleLinkedEnter}
-                        onMouseLeave={handleLinkedLeave}
                     >
                         <SocialMediaIconsReact 
                             url='https://www.linkedin.com/in/evan-taylor-/'
@@ -62,7 +64,9 @@ function Footer(){
                         linkedin.com/in/evan-taylor-/
                     </a>
                 </div>
-                <div className="footer-contact-container">
+                <div 
+                    className="github-container"
+                >
                     <a 
                         href='https://github.com/evantaylor7' 
                         target='_blank'
@@ -83,12 +87,12 @@ function Footer(){
                         github.com/evantaylor7
                     </a>
                 </div>
-                <div className="footer-contact-container">
-                    <div 
-                        className='mail-icon'
-                        onMouseEnter={handleMailEnter}
-                        onMouseLeave={handleMailLeave}
-                    >
+                <div 
+                    className="mail-container"
+                    onMouseEnter={handleMailEnter}
+                    onMouseLeave={handleMailLeave}
+                >
+                    <div className='mail-icon'>
                         <SocialMediaIconsReact 
                             url='mailto:evantaylor667@gmail.com'
                             icon='mail'
@@ -107,7 +111,9 @@ function Footer(){
                         evantaylor667@gmail.com
                     </a>
                 </div>
-                <div className="footer-contact-container">
+                <div 
+                    className="phone-container"
+                >
                     <a 
                         className="phone-icon"
                         href="tel:+14152501420"

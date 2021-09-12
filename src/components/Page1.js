@@ -69,7 +69,7 @@ function Page1(){
             </div>
             <div>
                 <div className="title-container">
-                    <h1 className="title">Hi I'm Evan,<br/> a full stack JavaScript web developer living in Salt Lake City.</h1>
+                    <h1 className="title">Hi I'm Evan,<br/> a full stack developer living in Salt Lake City.</h1>
                 </div>
                 <div className="next-page">
                     <div className="next-page-inner">
