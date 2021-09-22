@@ -8,7 +8,7 @@ function Blogtopia(){
             <div className="description-container">
                 <hr className="hr-top"/>
                 <h2 className="project-title">Blogtopia</h2>
-                <p className="description">This was my final project at V School, a blog publishing website. I have to say, it was very satisfying seeing it come together. A user can create a login, customize a blog landing page, choose a url endpoint for their blog address, and make blog posts.<br/><br/><b>Languages/Frameworks</b>: MongoDb, Mongoose, Express, Node.js, React, Styled Components for CSS.<br/><b>External Resources</b>: Unsplash API, TinyMCE API, AWS S3 storage bucket.</p>
+                <p className="description">This was my final project at V School, a blog publishing website. I have to say, it was very satisfying seeing it come together. A user can create a login, customize a blog landing page, choose a url endpoint for their blog address, and make blog posts.<br/><br/><b>Languages/Frameworks</b>: MongoDB, Mongoose, Express, Node.js, React, Styled Components for CSS.<br/><b>External Resources</b>: Unsplash API, TinyMCE API, AWS S3 storage bucket.</p>
                 <div className="links-container">
                     <div className="gh-link">
                         <a 

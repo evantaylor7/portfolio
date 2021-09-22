@@ -8,7 +8,7 @@ function Photo(){
             <div className="description-container-alt">
                 <hr className="hr-top"/>
                 <h2 className="project-title">Photo Sharing</h2>
-                <p className="description-alt">This was a group project with <a className="link-name" href="https://github.com/kennysouvannaleut" target='_blank' rel="noopener noreferrer">Kenny Souvannaleut</a>. We created a photo sharing social media app, and aptly named it "Photo Sharing". This was my first big project using databases and collaborating through GitHub.<br/><br/><b>Languages/Frameworks</b>: MongoDb, Mongoose, Express, Node.js, React.<br/><b>External Resourses</b>: Firebase Storage Bucket.</p>
+                <p className="description-alt">This was a group project with <a className="link-name" href="https://github.com/kennysouvannaleut" target='_blank' rel="noopener noreferrer">Kenny Souvannaleut</a>. We created a photo sharing social media app, and aptly named it "Photo Sharing". This was my first big project using databases and collaborating through GitHub.<br/><br/><b>Languages/Frameworks</b>: MongoDB, Mongoose, Express, Node.js, React.<br/><b>External Resourses</b>: Firebase Storage Bucket.</p>
                 <div className="links-container-alt">
                     <div className="gh-link-alt">
                         <a 
