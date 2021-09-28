@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import resumePDF from "./Resume.pdf"
+import resumePDF from "./resume.pdf"
 import {SocialMediaIconsReact} from 'social-media-icons-react'
 import DevIcon from 'devicon-react-svg'
 
