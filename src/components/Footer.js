@@ -111,7 +111,7 @@ function Footer(){
                         evantaylor667@gmail.com
                     </a>
                 </div>
-                <div 
+                {/* <div 
                     className="phone-container"
                 >
                     <a 
@@ -126,9 +126,9 @@ function Footer(){
                     >
                         415-250-1420
                     </a>
-                </div>
+                </div> */}
             </div>
-            <p className="signature">Evan Taylor – 2020</p>
+            <p className="signature">Evan Taylor – 2022</p>
         </div>
     )
 }
